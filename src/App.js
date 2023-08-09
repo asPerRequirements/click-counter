@@ -40,7 +40,7 @@ function App() {
       <div className="container">
         <div className="app">
           <div className='app--number'>
-            <h1 id='number'>{count}</h1>
+            <h1>{count}</h1>
           </div>
           <button className='btn' onClick={updateCount}>
             +1
