@@ -10,7 +10,7 @@ const Footer = ({ showCooie, setShowCookie, count, setCount }) => {
             <footer>
                 <div></div>
                 <div>
-                    <a href="//github.com/scorcism" target="_blank">scorcism</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a href="//github.com/DevOpsProjectOps" target="_blank">DevOpsProjectOps</a>
+                    <a href="//github.com/scorcism" rel="noreferrer" target="_blank">scorcism</a>&nbsp;&nbsp;-&nbsp;&nbsp;<a href="//github.com/DevOpsProjectOps" rel="noreferrer" target="_blank">DevOpsProjectOps</a>
                 </div>
                 <div>
                     {
