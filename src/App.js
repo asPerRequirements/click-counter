@@ -4,14 +4,14 @@ import './App.css';
 import Footer from './components/Footer';
 
 const getOrCreate = () => {
-  if (localStorage.getItem("count-react")) {
-    let num = parseInt(localStorage.getItem("count-react"));
-    return num + 1;
-  } else if (!localStorage.getItem("count-react")) {
-    localStorage.setItem("count-react", 1);
-    return 1;
+  const storedValue = localStorage.getItem("count-react");
+  if (storedValue !== null) {
+    return parseInt(storedValue);
+  } else {
+    localStorage.setItem("count-react", 0);
+    return 0;
   }
-}
+};
 
 function App() {
 
@@ -19,14 +19,15 @@ function App() {
   const [showCooie, setShowCookie] = useState(false);
 
   const updateCount = () => {
-    setCount(count + 1);
-    if (count % 30 === 0) {
+    const updatedCount = count + 1;
+    setCount(updatedCount);
+    
+    if (updatedCount % 30 === 0 && updatedCount >= 30) {
       setShowCookie(true);
     }
-    if (localStorage.getItem("count-react")) {
-      localStorage.setItem("count-react", count);
-    }
-  }
+  
+    localStorage.setItem("count-react", updatedCount.toString());
+  };
 
   useEffect(() => {
     let initial = getOrCreate();
