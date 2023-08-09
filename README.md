@@ -5,7 +5,7 @@
 #### clone
 
 ```bash
-git clone https://github.com/scorcism/click-counter.git
+git clone https://github.com/asPerReqirements/click-counter.git
 
 cd click-counter
 
@@ -19,4 +19,9 @@ npm run start
 
 ![preview](https://imgur.com/PPUSPgv.png)
 
-- contributions are open
+**contributions are open**
+
+  - UI update
+  - Logic update
+  - add new feature
+  - etc.
