@@ -1,8 +1,13 @@
+import { useState } from "react";
+
 const Footer = ({ showCooie, setShowCookie, count, setCount }) => {
 
+    const [combo , setCombo] =useState(1)
+
     const getPerk = () => {
-        setCount(count + 10);
+        setCount(count + (10*combo));
         setShowCookie(!showCooie)
+        setCombo(combo + 1)
     }
 
     return (
