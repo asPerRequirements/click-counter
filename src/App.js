@@ -20,7 +20,7 @@ function App() {
 
   const updateCount = () => {
     setCount(count + 1);
-    if (count % 30 == 0) {
+    if (count % 30 === 0) {
       setShowCookie(true);
     }
     if (localStorage.getItem("count-react")) {
