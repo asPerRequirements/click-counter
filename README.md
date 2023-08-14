@@ -5,7 +5,7 @@
 ### clone
 
 ```bash
-git clone https://github.com/asPerReqirements/click-counter.git
+git clone https://github.com/asPerRequirements/click-counter.git
 
 cd click-counter
 
