@@ -1,0 +1,12 @@
+version: '3'
+services:
+  node-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/app # Optional: Mount your application code for live development
+    environment:
+      NODE_ENV: production # Set the Node.js environment to production (change as needed)
