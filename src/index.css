@@ -9,8 +9,8 @@
 }
 
 body {
-  background-image: linear-gradient(90deg,rgb(39, 38, 38), black);
-  color: white;
+  background-image: #f6f8fa;
+  color: #0969da;
   font-family: 'Poppins', sans-serif;
 }
 

@@ -26,9 +26,11 @@
 .btn {
   font-size: 1.5em;
   padding: 5px 30px;
-  border: 2px solid violet;
-  border-radius: 3px;
+  border: 2px solid #0969da;
+  border-radius: 5px;
   cursor: pointer;
+  background: transparent;
+  color: #0969da;
 }
 
 .btn:hover {

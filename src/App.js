@@ -44,7 +44,7 @@ function App() {
             <h1>{count}</h1>
           </div>
           <button className='btn' onClick={updateCount}>
-            +1
+            + Increment
           </button>
         </div>
       </div>
